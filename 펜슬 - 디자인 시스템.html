@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PENCIL — Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/ds.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="b" href="#top">
+    <svg viewBox="0 0 37 59" fill="currentColor"><path d="M29.94 13.93 18.5 0 7.06 13.93H29.94Z"/><path d="M15.84 22.53H0V59h15.84V22.53Z"/><path d="M37 22.53H21.16V59H37V22.53Z"/></svg>
+  </a>
+  <div class="meta">
+    <span class="doc">Design System — v1.0</span>
+    <a class="live" href="펜슬 — 메인.html">메인 보기 →</a>
+  </div>
+</div>
+
+<!-- COVER -->
+<section class="cover" id="top">
+  <div class="cover-grid" aria-hidden="true"></div>
+  <div class="cover-inner">
+    <div class="mgn"><span class="mono">↓ 00</span><span class="mono vtag" style="writing-mode:vertical-rl;text-orientation:mixed;margin-top:auto;letter-spacing:.22em">DRAFTING SYSTEM</span></div>
+    <div class="main">
+      <div class="eye">
+        <span class="mono">PENCIL — BX COMPANY</span>
+        <span class="mono">DESIGN SYSTEM · 2026</span>
+      </div>
+      <h1>DESIGN<br><span>SYSTEM.</span></h1>
+      <div class="sub">
+        <p>제도 도면의 그리드와 거대한 타이포로 구성한 레이아웃 시스템. 모노톤 위, 직각과 1px 청사진 라인으로 짓고, 색은 오직 작업 안에서만 씁니다.</p>
+        <span class="mono">RIGHT-ANGLE · HUGE TYPE · BLUEPRINT</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 FOUNDATIONS -->
+<section class="band">
+  <div class="mgn"><span class="idx">01</span><span class="vtag">기본 원칙</span></div>
+  <div class="main">
+    <span class="sec-no">( FOUNDATIONS )</span>
+    <h2 class="sec-title">기본 원칙</h2>
+    <p class="lead">이 시스템은 ‘정직한 미니멀’을 ‘구조적 긴장감’으로 끌어올린 방향입니다. <b>제도 도면처럼 단단한 그리드</b> 위에 타이포를 오브제처럼 배치합니다.</p>
+    <div class="cells">
+      <div class="cell"><span class="k">Drafting Grid</span><h3>도면의 골격</h3><p>좌측 제도 마진 + 1px 수직 가이드라인이 모든 밴드를 관통합니다. 콘텐츠는 가이드라인에 칼같이 정렬됩니다.</p><span class="big">|—</span></div>
+      <div class="cell"><span class="k">Right-angle</span><h3>완벽한 직각</h3><p>모든 요소의 모서리는 0px. 카드·버튼·썸네일·입력까지 예외 없이 직각으로 통일합니다.</p><span class="big">0px</span></div>
+      <div class="cell"><span class="k">Asymmetry</span><h3>비대칭 여백</h3><p>한쪽을 과감히 비우는 비대칭 마진으로 공간감을 만듭니다. 좁게 가두지 않습니다.</p><span class="big">◧</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 LOGO -->
+<section class="band">
+  <div class="mgn"><span class="idx">02</span><span class="vtag">심볼</span></div>
+  <div class="main">
+    <span class="sec-no">( LOGO )</span>
+    <h2 class="sec-title">심볼</h2>
+    <p class="lead">연필 끝(펜촉) + 두 기둥의 기하학 마크. 헤더·푸터에서는 <b>심볼 단독</b>으로만 사용하며, 헤더·푸터의 좌측 제도 마진 칸에 중앙 정렬해 ‘도면 표제란’처럼 배치합니다.</p>
+    <div class="cells" style="grid-template-columns:repeat(3,1fr)">
+      <div class="cell" style="align-items:center;justify-content:center"><svg viewBox="0 0 37 59" fill="var(--text)" style="width:42px"><path d="M29.94 13.93 18.5 0 7.06 13.93H29.94Z"/><path d="M15.84 22.53H0V59h15.84V22.53Z"/><path d="M37 22.53H21.16V59H37V22.53Z"/></svg><span class="caplbl" style="margin-top:18px">PRIMARY · ON INK</span></div>
+      <div class="cell" style="align-items:center;justify-content:center;background:var(--text)"><svg viewBox="0 0 37 59" fill="#0E0E0E" style="width:42px"><path d="M29.94 13.93 18.5 0 7.06 13.93H29.94Z"/><path d="M15.84 22.53H0V59h15.84V22.53Z"/><path d="M37 22.53H21.16V59H37V22.53Z"/></svg><span class="caplbl" style="margin-top:18px;color:#1A1A1A">REVERSED · ON LIGHT</span></div>
+      <div class="cell" style="align-items:center;justify-content:center"><div style="border:1px dashed var(--line-2);padding:24px"><svg viewBox="0 0 37 59" fill="var(--text)" style="width:38px"><path d="M29.94 13.93 18.5 0 7.06 13.93H29.94Z"/><path d="M15.84 22.53H0V59h15.84V22.53Z"/><path d="M37 22.53H21.16V59H37V22.53Z"/></svg></div><span class="caplbl" style="margin-top:18px">CLEARSPACE · ½ 높이</span></div>
+    </div>
+    <div class="note"><span class="tag">Rule</span><span>헤더 표시 14–17px 폭. 심볼 비율(37:59) 변형 금지. 워드마크 병기하지 않음.</span></div>
+  </div>
+</section>
+
+<!-- 03 COLOR -->
+<section class="band">
+  <div class="mgn"><span class="idx">03</span><span class="vtag">컬러</span></div>
+  <div class="main">
+    <span class="sec-no">( COLOR )</span>
+    <h2 class="sec-title">컬러</h2>
+    <p class="lead">UI는 무채색 고정. 청사진 라인은 <b>#1F1F1F~#262626</b>의 아주 얇고 흐릿한 1px. 채도 컬러는 오직 <b>프로젝트 썸네일 안에서만</b> 등장합니다.</p>
+    <div class="ramp">
+      <div class="sw" style="background:#0E0E0E"><span class="nm" style="color:#9A9A9A">Ink / BG</span><span class="hx">#0E0E0E</span></div>
+      <div class="sw" style="background:#1F1F1F"><span class="nm" style="color:#9A9A9A">Grid Line</span><span class="hx">#1F1F1F</span></div>
+      <div class="sw" style="background:#3A3A3A"><span class="nm" style="color:#cfcfcf">Text-4</span><span class="hx" style="color:#9A9A9A">#3A3A3A</span></div>
+      <div class="sw" style="background:#5E5E5E"><span class="nm" style="color:#fff">Text-3</span><span class="hx" style="color:#cfcfcf">#5E5E5E</span></div>
+      <div class="sw" style="background:#9A9A9A"><span class="nm" style="color:#111">Text-2</span><span class="hx" style="color:#222">#9A9A9A</span></div>
+      <div class="sw" style="background:#ECECEC"><span class="nm" style="color:#111">Text</span><span class="hx" style="color:#444">#ECECEC</span></div>
+    </div>
+    <div class="accents">
+      <div class="ac" style="background:oklch(0.64 0.18 32)"><span>Work</span></div>
+      <div class="ac" style="background:oklch(0.7 0.16 78)"><span>Work</span></div>
+      <div class="ac" style="background:oklch(0.72 0.16 122)"><span>Work</span></div>
+      <div class="ac" style="background:oklch(0.66 0.15 150)"><span>Work</span></div>
+      <div class="ac" style="background:oklch(0.68 0.14 195)"><span>Work</span></div>
+      <div class="ac" style="background:oklch(0.64 0.16 250)"><span>Work</span></div>
+      <div class="ac" style="background:oklch(0.62 0.17 300)"><span>Work</span></div>
+      <div class="ac" style="background:oklch(0.62 0.2 350)"><span>Work</span></div>
+    </div>
+    <div class="note"><span class="tag">Rule</span><span>UI(버튼·링크·아이콘)에는 무채색만. 썸네일 컬러는 <code>oklch(L 0.14–0.20 H)</code>에서 색상(H)만 회전해 톤을 통일합니다.</span></div>
+  </div>
+</section>
+
+<!-- 04 TYPOGRAPHY -->
+<section class="band">
+  <div class="mgn"><span class="idx">04</span><span class="vtag">타입</span></div>
+  <div class="main">
+    <span class="sec-no">( TYPOGRAPHY )</span>
+    <h2 class="sec-title">타입</h2>
+    <p class="lead">대형 타이틀은 화면을 압도하는 크기로, <b>letter-spacing을 극단적으로 좁혀(-0.04em~-0.055em)</b> 텍스트 자체를 그래픽 오브제로 다룹니다. 본문은 뉴트럴하게.</p>
+    <div class="types">
+      <div class="tspec"><div class="m"><div class="fam">Archivo</div><div class="use">EN Display<br>거대 타이틀 · 워드</div></div><div class="s disp">WORK / ABOUT</div></div>
+      <div class="tspec"><div class="m"><div class="fam">Pretendard</div><div class="use">KO Body / Title<br>국문 제목 · 본문</div></div><div class="s kr">생각을 현실로 바꿉니다</div></div>
+      <div class="tspec"><div class="m"><div class="fam">Space Mono</div><div class="use">Label / Index<br>라벨 · 인덱스 · 좌표 HUD</div></div><div class="s mn">( 01 — 08 ) UX/UI · 2024</div></div>
+    </div>
+    <h3 class="mono" style="margin:46px 0 4px;color:var(--text-2)">TYPE SCALE</h3>
+    <div class="scale">
+      <div class="srow"><div class="meta"><b>Hero Word</b>Archivo 800 · clamp(48→210)</div><div class="demo d-word">PENCIL</div></div>
+      <div class="srow"><div class="meta"><b>Section Title</b>Archivo 700 · clamp(40→128)</div><div class="demo d-h1">SERVICES</div></div>
+      <div class="srow"><div class="meta"><b>Sub Title</b>Archivo 700 · clamp(22→46)</div><div class="demo d-h2">하나의 흐름으로 통합된 경험</div></div>
+      <div class="srow"><div class="meta"><b>KO Lead</b>Pretendard 500 · clamp(24→56)</div><div class="demo d-kr">우리가 일하는 방식</div></div>
+      <div class="srow"><div class="meta"><b>Body</b>Pretendard 400 · 14–17 / 1.7</div><div class="demo d-body">브랜드는 눈에 보이지 않습니다. 펜슬은 그 브랜드를 보고 만질 수 있는 경험으로 바꿉니다.</div></div>
+      <div class="srow"><div class="meta"><b>Mono Label</b>Space Mono · 11 / .16em</div><div class="demo d-mono">( BX COMPANY ) — SEOUL · KR</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 TOKENS -->
+<section class="band">
+  <div class="mgn"><span class="idx">05</span><span class="vtag">토큰</span></div>
+  <div class="main">
+    <span class="sec-no">( TOKENS )</span>
+    <h2 class="sec-title">토큰</h2>
+    <div class="tok2">
+      <div class="tok">
+        <span class="pick">채택 · 직각</span>
+        <h4>Corner Radius — 0px</h4>
+        <div class="demo"><div style="text-align:center"><div class="sq sharp"></div><span class="caplbl">0px · 채택</span></div><div style="text-align:center"><div class="sq round"></div><span class="caplbl">rounded · 미사용</span></div></div>
+        <p>둥근 모서리가 흐려지는 뻔한 효과는 전부 배제. 모든 컴포넌트를 직각으로 통일해 제도·에디토리얼의 정밀함을 유지합니다.</p>
+      </div>
+      <div class="tok">
+        <span class="pick" style="background:#3A3A3A;color:#ECECEC">청사진 라인</span>
+        <h4>Hairline — 1px / #1F1F1F</h4>
+        <div class="demo"><div class="lined"><i></i><i></i><i></i></div></div>
+        <p>아주 얇고 흐릿한 1px 라인으로 헤더·밴드·리스트·그리드를 ‘긋습니다’. hover 시 흰색 면이 대각선으로 차오릅니다.</p>
+      </div>
+      <div class="tok">
+        <span class="pick" style="background:#3A3A3A;color:#ECECEC">비대칭 여백</span>
+        <h4>Margin — clamp(48 · 11vw · 180)</h4>
+        <p style="margin-top:2px">좌측 제도 마진 <code>--mgn</code> + 우측 거터 <code>--gut</code>. 콘텐츠를 가이드라인에 붙이고 한쪽을 시원하게 비웁니다.</p>
+      </div>
+      <div class="tok">
+        <span class="pick" style="background:#3A3A3A;color:#ECECEC">간격 리듬</span>
+        <h4>Section — clamp(34 · 6vh · 76)</h4>
+        <p style="margin-top:2px">밴드 상하 패딩. 거대 타이포와 넉넉한 여백으로 ‘심플하지만 지루하지 않은’ 리듬을 만듭니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 LAYOUT -->
+<section class="band">
+  <div class="mgn"><span class="idx">06</span><span class="vtag">레이아웃</span></div>
+  <div class="main">
+    <span class="sec-no">( LAYOUT )</span>
+    <h2 class="sec-title">레이아웃</h2>
+    <p class="lead">모든 밴드는 <b>[ 제도 마진 | 1px 가이드 | 콘텐츠 ]</b> 그리드입니다. 타이틀의 첫 글자가 좌측 가이드라인에 칼같이 맞물려, 텍스트가 구조의 일부가 됩니다.</p>
+    <div class="layout">
+      <div class="row">
+        <div class="lm"><span class="t">02</span><span class="v">주요 프로젝트</span></div>
+        <div class="lmain">
+          <span class="mono" style="color:var(--text-3)">( 01 — 08 )</span>
+          <div class="huge" style="margin-top:14px">WORK</div>
+          <div class="cap">↑ 첫 글자가 가이드라인(흰 1px)에 정렬 · flush-left</div>
+          <span class="anno" style="right:16px;top:16px">RIGHT GUTTER ↔</span>
+        </div>
+      </div>
+    </div>
+    <div class="note"><span class="tag">Anatomy</span><span>좌측 마진 칸 = 인덱스 번호 + 세로 라벨(제목). 가이드라인 우측 = 거대 타이틀 + 콘텐츠. 모바일에서는 마진 칸이 접히고 단일 컬럼으로 전환됩니다.</span></div>
+  </div>
+</section>
+
+<!-- 07 COMPONENTS -->
+<section class="band">
+  <div class="mgn"><span class="idx">07</span><span class="vtag">컴포넌트</span></div>
+  <div class="main">
+    <span class="sec-no">( COMPONENTS )</span>
+    <h2 class="sec-title">컴포넌트</h2>
+    <div class="cboard">
+      <div class="cbox">
+        <span class="clab">Buttons · 대각선 슬라이드 채움</span>
+        <div class="dbtns"><span class="bx"><span>Outline →</span></span><span class="bx solid"><span>Solid →</span></span></div>
+        <p class="cnote">hover 시 흰 면이 사선(폴리곤 clip-path)으로 빠르게 차오르고 텍스트가 잉크색으로 반전. 직각 유지.</p>
+      </div>
+      <div class="cbox">
+        <span class="clab">Filter · Sort</span>
+        <div class="fchips"><span class="fchip on">All</span><span class="fchip">UX/UI</span><span class="fchip">Web</span><span class="fchip">App</span></div>
+        <p class="cnote">맞붙은 직각 칩. 활성 = 흰색 채움 · 잉크 텍스트. 연도순 정렬 토글과 함께 동작.</p>
+      </div>
+      <div class="cbox full">
+        <span class="clab">Work Row · 대각선 채움 + 플로팅 썸네일</span>
+        <div class="rowdemo">
+          <div class="rd"><span class="i">01</span><span class="nm">Question for ALL</span><span class="c">UX/UI</span><span class="y">2024</span></div>
+          <div class="rd hot"><span class="i">02</span><span class="nm">LG HelloVision</span><span class="c">Web</span><span class="y">2023</span></div>
+        </div>
+        <p class="cnote">기본은 1px 라인 + 텍스트만. hover(아래 행) 시 흰 면이 사선으로 차오르고, 커서를 부드럽게 지연 추적하는 컬러 썸네일이 등장.</p>
+      </div>
+      <div class="cbox">
+        <span class="clab">Floating Thumbnail · 7:5</span>
+        <div class="thumbdemo" style="background:oklch(0.64 0.18 32)"><div class="t"><span>UX/UI Design</span><span>VIEW →</span></div><span class="big">Question<br>for ALL</span></div>
+        <p class="cnote">표시 330px · 제작 <code>900×640</code>(2x). 색은 여기서만.</p>
+      </div>
+      <div class="cbox">
+        <span class="clab">Square Cursor</span>
+        <div class="curdemo"><span class="c1"></span><span class="cl">기본 9×9px</span><span class="c2"></span><span class="cl">인터랙티브 위 46px</span></div>
+        <p class="cnote">원형 대신 완벽한 직각 사각형. <code>mix-blend: difference</code>로 배경에 따라 색 반전.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 IMAGE SIZES -->
+<section class="band">
+  <div class="mgn"><span class="idx">08</span><span class="vtag">이미지 규격</span></div>
+  <div class="main">
+    <span class="sec-no">( IMAGE SIZES )</span>
+    <h2 class="sec-title">이미지</h2>
+    <p class="lead">반응형이라 <b>가장 큰 표시의 2배(레티나) 한 장</b>이면 충분합니다. 모두 <code>object-fit:cover</code>·직각이며, 색은 이미지 안에서만.</p>
+    <div class="imgspecs">
+      <div class="ispec"><div class="ratio work" style="aspect-ratio:7/5;background:oklch(0.64 0.18 32)"><span>UX/UI Design</span><span>VIEW →</span></div><div class="top"><h4>Hover Thumbnail</h4><span class="rt">7 : 5</span></div><div class="sl"><b>표시</b><span class="px">330 px</span></div><div class="sl"><b>제작(2x)</b><span class="px">900 × 640</span></div></div>
+      <div class="ispec"><div class="ratio" style="aspect-ratio:16/9">KEY VISUAL<span>16:9</span></div><div class="top"><h4>Detail Key Visual</h4><span class="rt">16 : 9</span></div><div class="sl"><b>사용처</b><span>상세 메인</span></div><div class="sl"><b>제작</b><span class="px">2400 × 1350</span></div></div>
+      <div class="ispec"><div class="ratio" style="aspect-ratio:24/9">GALLERY — WIDE<span>24:9</span></div><div class="top"><h4>Gallery · Wide</h4><span class="rt">24 : 9</span></div><div class="sl"><b>사용처</b><span>상세 와이드</span></div><div class="sl"><b>제작</b><span class="px">2400 × 900</span></div></div>
+      <div class="ispec"><div class="ratio" style="aspect-ratio:4/3">GALLERY — 2-UP<span>4:3</span></div><div class="top"><h4>Gallery · 2-up</h4><span class="rt">4 : 3</span></div><div class="sl"><b>사용처</b><span>상세 2단</span></div><div class="sl"><b>제작</b><span class="px">1600 × 1200</span></div></div>
+    </div>
+    <div class="note"><span class="tag">Format</span><span>WebP(권장)·sRGB · 파일당 200–400KB 이하 · 모서리 0px · 모바일 1단 스택에서도 동일 파일 재사용.</span></div>
+  </div>
+</section>
+
+<!-- 09 MOTION -->
+<section class="band" style="border-bottom:none">
+  <div class="mgn"><span class="idx">09</span><span class="vtag">모션</span></div>
+  <div class="main">
+    <span class="sec-no">( MOTION )</span>
+    <h2 class="sec-title">모션</h2>
+    <div class="mlist">
+      <div class="mrow"><span class="mt">Diagonal Slide-in</span><span class="md">버튼·행·네비 hover 시 흰 면이 <code>clip-path</code> 폴리곤으로 사선 차오름. 둥글어지거나 흐려지지 않는 예리한 전환.</span></div>
+      <div class="mrow"><span class="mt">Square Cursor</span><span class="md">9×9px 사각 커서가 인터랙티브 요소 위에서 46px로 확대. <code>mix-blend:difference</code>로 색 반전.</span></div>
+      <div class="mrow"><span class="mt">Floating Thumbnail</span><span class="md">Work 행 hover 시 커서를 <code>lerp</code>로 부드럽게 지연 추적하는 컬러 썸네일. 사이트에서 색이 등장하는 유일한 순간.</span></div>
+      <div class="mrow"><span class="mt">Letter Stagger</span><span class="md">히어로 워드가 글자별로 마스크 아래에서 솟아오름. <code>delay = i × 0.08s</code>.</span></div>
+      <div class="mrow"><span class="mt">Drawn Line</span><span class="md">등장 시 1px 라인이 좌→우로 그어짐 — 연필의 ‘선 긋기’.</span></div>
+      <div class="mrow"><span class="mt">Page Transition</span><span class="md">내부 이동 시 잉크색 커버가 페이드 인·아웃. 인쇄·정지 컨텍스트에서는 최종 상태로 즉시 표시.</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fm"></div>
+  <div class="fmain">
+    <span class="mono">© <span id="yr">2026</span> PENCIL INC. — DESIGN SYSTEM v1.0</span>
+    <span class="mono">PENCIL@9H6B.COM</span>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<template id="__bundler_thumbnail" data-bg-color="#0E0E0E">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="800" fill="#0E0E0E"/><g fill="#ECECEC" transform="translate(582,352) scale(2.4)"><path d="M29.94 13.93 18.5 0 7.06 13.93H29.94Z"/><path d="M15.84 22.53H0V59h15.84V22.53Z"/><path d="M37 22.53H21.16V59H37V22.53Z"/></g><text x="600" y="560" fill="#5E5E5E" font-family="monospace" font-size="18" letter-spacing="4" text-anchor="middle">DESIGN SYSTEM</text></svg>
+</template>
+</body>
+</html>
